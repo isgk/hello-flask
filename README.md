@@ -19,6 +19,7 @@ git clone https://github.com/isgk/hello-flask.git
 python3 -m venv hello-flask-venv
 source ./hello-flask-venv/bin/activate
 cd hello-flask
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
