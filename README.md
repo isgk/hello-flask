@@ -18,7 +18,6 @@ flask
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
 
 ```
 git clone https://github.com/isgk/hello-flask.git
@@ -33,26 +32,29 @@ Run server
 FLASK_APP=hello.py flask run
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Post Json
 
-Explain how to run the automated tests for this system
+Don't forget to escape double quote with backslash.
 
-### Break down into end to end tests
+### Post Json request
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+Don't forget to set contentType as 'application/json'
 
 ```
-Give an example
+{
+    "krutidev": "egkjk\"Vz jkT; Hkwlaiknu iqfLrdkizek.ks rDrk"
+}
+```
+
+### Json Response
+
+
+```
+{
+    "krutidev": "egkjk\"Vz jkT; Hkwlaiknu iqfLrdkizek.ks rDrk",
+    "unicoded": "महाराष्ट्र राज्य भूसंपादन पुस्तिकाप्रमाणे तक्ता"
+}
 ```
 
 ## Deployment
@@ -61,9 +63,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Flask](http://flask.pocoo.org/) - The web framework used
 
 ## Contributing
 
